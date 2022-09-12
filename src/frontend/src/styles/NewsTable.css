@@ -1,0 +1,42 @@
+.NewsTable::-webkit-scrollbar {
+    display: none;
+
+}
+.NewsTable{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: 2px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.TableSimplebar{
+    height: 100%;
+    width: inherit;
+    display: flex;
+    /* padding-bottom: 50px; */
+}
+.NewsComponent{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    width: calc(100% - 40px);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.TableSimplebar::-webkit-scrollbar {
+    display: none;
+}
+
+.TableSimplebar .simplebar-scrollbar::before{
+    background-color:white;
+} 
+
+.ReadMore:hover {
+    cursor: pointer;
+    color: whitesmoke !important;
+    transition: all 0.3s ease;
+}

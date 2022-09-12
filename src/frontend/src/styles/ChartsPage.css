@@ -1,0 +1,34 @@
+.ChartsPage_Layout {
+    display: flex;
+    row-gap: 2vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    overflow: auto;
+}
+.ChartsPage_Layout_wrapper .simplebar-scrollbar::before{
+    background-color: white;
+  }
+  
+.ChartsPage_Layout_wrapper::-webkit-scrollbar {
+    display: none;
+}
+.Loading {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.chart{
+    display: flex;
+    flex: 1 1 1;
+    min-width: 500px;
+    max-width: 750px;
+    height: 100vh;
+    width: 100vw;
+}

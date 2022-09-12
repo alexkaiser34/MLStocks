@@ -6,7 +6,7 @@
 ## About MLStocks
 
 ### Overview
-MLStocks is a cross-platform desktop application built with Electron and React JS (using typescript). It displays real time stock data with
+MLStocks is a cross-platform, open-source desktop application built with Electron and React JS (using typescript). It displays real time stock data with
 machine learning price predictions.  At the moment, up to 50 predefined stocks are supported.  The application
 contains three pages that the user can navigate between including a home page, a search page, and a stock charts page.
 
@@ -40,6 +40,24 @@ The following is a list of all technologies used in this application.
 1. <a href="https://www.microsoft.com/en-us/windows/windows-11">**Windows**</a>
     - tested on Windows 11
 
+### Repo Layout
+
+📦MLStocks \
+ ┣ 📂images \
+ ┣ 📂mac \
+ ┃ ┣ 📜MLStocks-0.1.0.dmg \
+ ┣ 📂src \
+ ┃ ┣ 📂backend \
+ ┃ ┃ ┣ 📂backend_src \
+ ┃ ┃ ┗ 📂installation \
+ ┃ ┗ 📂frontend \
+ ┃ ┃ ┣ 📂public \
+ ┃ ┃ ┣ 📂src \
+ ┃ ┃ ┣ 📜package.json \
+ ┗ 📜README.md 
+
+ `images` : Directory containing images used in README. \
+ `src` : Directory containing source code for backend and frontend
 
 ### Stock Metrics
 The application displays different metrics for each stock including the following:
@@ -82,24 +100,24 @@ NOTE: For now, the settings page is under construction.
 
 ## Installation Instructions
 
-### Linux
-Install the debian package located in the linux directory.
+Download and install prebuilt packages for Linux, Windows, or macOS in the `Releases` page
+of this github repository.
 
-### Windows
-Install the exe file located in the windows directory.
+**NOTE:** If you are experiencing issues with downloading the macOS package from github, perform the following:
+1. Install git lfs (found <a href="https://git-lfs.github.com/">here</a>)
+1. Clone this repository
+1. Install the `dmg` file in the `mac` directory
 
-### macOS
-The macOS dmg file is located in the mac directory.  Since the file is slightly over 100 MB,
-`git lfs` has to be used.  In order to install `git lfs`, follow this <a href="https://git-lfs.github.com/">guide</a>.
-After `git lfs` is installed and the repository has been cloned, run the command `git lfs pull` from the root of the 
-project.  This will pull in the full dmg file which can then be installed.
-
-## Local Development Option
+## Local Development Options
 If you are experiencing problems or slow speeds with this applications, there is a configuration to install this application locally. 
-This reporistory contains a `devel` branch.  This branch sets up the backend of the application on your local machine.
+This repository contains a `devel` branch.  This branch sets up the backend of the application on your local machine.
 On installation, two docker containers spawn that run in the background forever. One container runs an influx database,
 and the other runs the main python script, which constantly updates stock data. This option also allow you to customize which stocks
 are supported (up to 50).
+
+### Editing Source Code
+The source code is located in the `src` directory.  These directories contain README's to provide instructions on how to edit the source code 
+when developing.  It is easiest to run the application locally when developing (see the `devel` branch).
 
 ### System Requirements
 A linux machine (x86_64 architecture) must be used when running the develop configuration of this application.

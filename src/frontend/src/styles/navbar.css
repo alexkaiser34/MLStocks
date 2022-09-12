@@ -1,0 +1,64 @@
+.navigation_bar {
+    background-color: black;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+ul#nav_components {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: inherit;
+}
+ul#nav_components li {
+    flex: 0 1 auto;
+    list-style-type: none;
+    height: 80%;
+    /* margin: 0; */
+    /* padding: auto; */
+    align-items: center;
+    justify-content: center;
+    
+}
+ul#nav_components li a {
+    color: black;
+    align-items: center;
+    text-decoration: none;
+    height: inherit;
+    align-items: center;
+
+}
+.Settings_icon {
+    align-self: center;
+    filter: invert(44%) sepia(62%) saturate(2837%) hue-rotate(90deg) brightness(134%) contrast(94%);
+}
+.Settings_icon:hover {
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(120deg) brightness(120%) contrast(102%);
+}
+.News_icon {
+    align-self: center;
+    filter: invert(44%) sepia(62%) saturate(2837%) hue-rotate(90deg) brightness(134%) contrast(94%);
+}
+.News_icon:hover {
+    filter: invert(100%) sepia(2%) saturate(216%) hue-rotate(238deg) brightness(225%) contrast(100%);
+}
+.Home_icon {
+    filter: invert(44%) sepia(62%) saturate(2837%) hue-rotate(90deg) brightness(134%) contrast(94%);
+}
+.Home_icon:hover {
+    filter: invert(100%) sepia(2%) saturate(216%) hue-rotate(238deg) brightness(225%) contrast(100%);
+}
+.Search_icon {
+    filter: invert(44%) sepia(62%) saturate(2837%) hue-rotate(90deg) brightness(134%) contrast(94%);
+}
+.Search_icon:hover {
+    filter: invert(100%) sepia(2%) saturate(216%) hue-rotate(238deg) brightness(225%) contrast(100%);
+}
+.Charts_icon {
+    filter: invert(44%) sepia(62%) saturate(2837%) hue-rotate(90deg) brightness(134%) contrast(94%);
+}
+.Charts_icon:hover {
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(120deg) brightness(120%) contrast(102%);
+}

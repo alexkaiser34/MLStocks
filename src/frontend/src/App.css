@@ -1,0 +1,50 @@
+.App {
+  width: 100vw; 
+  margin: 0;
+  height: 100vh; /* lets make this 100 vh to say takes up whole screen */
+  display: flex; 
+  flex-direction: column;
+  background-color: black;
+}
+.Loading_app{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+/* this is the style of a page, overflow auto for scrolling */
+.app.page{
+  margin: 10px;
+  background-color: black;
+  height: 90vh;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+/* this is the style for the navbar, height is defined by icon heights navbar.css */
+.app.navbar{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10vh;
+  position: fixed;
+  background-color: black;
+  z-index: 10000000000;
+  /* overflow: hidden; */
+}
+
+.simple-bar-wrapper{
+  /* flex: 1 1 auto; */
+  /* overflow: auto; */
+  scrollbar-color: white;
+}
+.simple-bar-wrapper .simplebar-scrollbar::before{
+  background-color: white;
+}
+
+.simple-bar-wrapper::-webkit-scrollbar {
+  display: none;
+}

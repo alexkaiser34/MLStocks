@@ -1,3 +1,6 @@
-backend/config.yml
-backend/influxdb2/
+src/backend/installation/scripts/config.yml
+src/backend/installation/scripts/influxdb2/
 env/.env
+**/node_modules/
+**/venv/
+**/__pycache__/

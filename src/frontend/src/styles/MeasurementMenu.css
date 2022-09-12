@@ -1,0 +1,19 @@
+.MeasurementButton:hover{
+    cursor: pointer !important;
+    color: whitesmoke !important;
+    transition: all 0.3s ease !important;
+
+}
+.MeasurementItem:hover{
+    cursor: pointer !important;
+    color: whitesmoke !important;
+    transition: all 0.3s ease !important;
+    background-color: gray !important;
+}
+.Menu li{
+    padding: 10px 10px; 
+}
+.Menu ul{
+    border: 2px solid rgb(92, 92, 92) !important;
+    padding: 0;
+}

@@ -1,0 +1,124 @@
+.ExpandedChart {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10vh;
+    padding-bottom: calc(12vh + 20px);
+    z-index: 10 !important;
+    background-color: black;
+}
+.simple-bar-expand {
+    overflow-x: hidden;
+    width: calc(100% - 20px);
+    height: 100%;
+    z-index: 12;
+    padding-left: 20px;
+}
+
+.simple-bar-expand p {
+    padding-bottom: 20px;
+}
+.ExpandedChart::-webkit-scrollbar {
+    display: none;
+}
+.ChartHeader_Expand{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 97%;
+    /* padding-left: 20px; */
+}
+.ChartHeader_Expand div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ChartHeader_Expand h3 {
+    display: flex;
+    margin-top: -1vh;
+    font-size: 2.5vh;
+    /* font-size: calc(1px + 1.9vh); */
+}
+.ChartHeader_Expand h2 {
+    display: flex;
+    color: rgb(177, 176, 176);
+    font-size: 3.2vh;
+
+}
+.ticker_button_Expand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding-left: 20px;
+}
+.ticker_button_Expand button{
+    background-color: transparent;
+    border-color: transparent;
+    float: right;
+}
+.logo{
+    height: 5vh;
+}
+.companyName{
+    color: white;
+    font-size: 3vh;
+}
+
+.expand_icon{
+    height: 5vh;
+    padding-right: 20px;
+}
+.ticker_button_Expand button{
+    filter: invert(100%) sepia(2%) saturate(216%) hue-rotate(238deg) brightness(225%) contrast(100%);
+
+}
+.ticker_button_Expand button:hover{
+    cursor: pointer;
+}
+.ticker_button_Expand h1{
+    display: inline;
+    font-size: 5vh;
+    color: white;
+    margin-left: 0;
+}
+.header_labels_Expand {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.GraphVisual_Expand {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    min-width: 600px;
+    min-height: 400px;
+    /* padding-left: 20px; */
+}
+
+.btns_Expand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1.5vh;
+    padding-bottom: 2vh;
+    height: 10%;
+}
+.btns_Expand button{
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 1vh;
+    height: 4vh;
+    width: 4vw;
+    min-width: 75px;
+}
+.btns_Expand button:hover {
+    background: white;
+    color: white !important;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}

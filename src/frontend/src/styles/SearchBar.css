@@ -1,0 +1,18 @@
+
+.SuggestionsBar {
+    background-color: black !important;
+    border: none;
+    color: whitesmoke;
+}
+
+.SuggestionsBar::-webkit-scrollbar {
+    display: none !important;
+}
+
+.PaperComp::-webkit-scrollbar {
+    display: none;
+}
+
+.SuggestionsBar .simplebar-scrollbar::before{
+    background-color:white;
+}
